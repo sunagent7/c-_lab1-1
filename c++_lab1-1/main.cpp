@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include "io.h"
 #include "statistics.h"
-
-#define DATASIZE 150
+#include "main.h"
 
 int main()
 {
