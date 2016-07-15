@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<assert.h>
 
 void readFile(int *dataSize, int data[])
 {
@@ -25,6 +26,7 @@ void readFile(int *dataSize, int data[])
 	*/
 
 	fopen_s(&fp, filename, "rt"); //change to fopen_s
+	assert(fp != 0);
 	fscanf_s(fp, "%d", dataSize); //change to fscanf_s
 	for (i = 0; i<*dataSize; i++)
 		fscanf_s(fp, "%d", &data[i]);
